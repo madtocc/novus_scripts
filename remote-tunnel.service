@@ -1,0 +1,13 @@
+[Unit]
+Description=Setup remote tunnel
+#After=network-online.target
+[Service]
+User=novus
+Type=simple
+ExecStartPre=/bin/sleep 15
+RestartSec=60
+Restart=always
+KillMode=mixed
+
+[Install]
+WantedBy=multi-user.target

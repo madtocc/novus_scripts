@@ -1,0 +1,14 @@
+[Unit]
+Description=Novus vehicle counting
+After=multi-user.target
+
+[Service]
+Type=simple
+User=novus
+ExecStart=/usr/bin/python3 /home/novus/app/detection.py &> /dev/null
+WorkingDirectory=/home/novus/app
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
