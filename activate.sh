@@ -7,7 +7,7 @@ if [ -e key.pem ]; then
     sudo ./timezone.sh
     sudo ./sd_resize.sh
     sudo ./reboot.sh
-    sudo ./remote-tunnel.sh
+    sudo ./remote_tunnel.sh
     sudo ./ufw.sh
     sudo ./novus.sh
 else
