@@ -14,6 +14,7 @@ ufw allow 8883
 ufw allow out https
 ufw allow out ssh
 ufw allow out 8883
+ufw allow ntp 
 ufw enable
 
 
