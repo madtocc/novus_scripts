@@ -8,8 +8,10 @@ if [ -e key.pem ]; then
     sudo ./sd_resize.sh
     sudo ./reboot.sh
     sudo ./remote_tunnel.sh
-    sudo ./ufw.sh
     sudo ./novus.sh
+    sudo ./disable_apt_upgrade.sh
+    sudo ./ntp.sh
+    sudo ./ufw.sh
 else
 	echo "[x] key not found"
 fi

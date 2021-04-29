@@ -14,7 +14,8 @@ ufw allow 8883
 ufw allow out https
 ufw allow out ssh
 ufw allow out 8883
-ufw allow ntp 
+sudo ufw allow 123/udp
+sudo ufw allow out 123/udp
 ufw enable
 
 
