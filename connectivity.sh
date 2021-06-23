@@ -1,5 +1,5 @@
 #!/bin/bash
-LOG_FILE="${PWD}/.connection.log"
+LOG_FILE="/home/novus/.connection.log"
 if ifconfig -a wwan0 | grep "inet "> /dev/null;then
 	echo $(date) OK >> $LOG_FILE
 else
